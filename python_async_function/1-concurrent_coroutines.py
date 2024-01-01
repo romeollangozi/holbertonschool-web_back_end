@@ -16,6 +16,6 @@ async def wait_n(n: int, max_delay: int) -> [float]:
     ascending order without using sort() because of concurrency.
     '''
 
-    res = await asyncio.gather(*(wait_random(max_delay) for _ in range(n)))
+    res = await asyncio.gather(*(wait_random(max_delay) for _ in range(n + 1)))
 
     return sorted(res)
