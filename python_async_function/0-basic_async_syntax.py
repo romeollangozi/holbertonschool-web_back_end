@@ -16,6 +16,6 @@ async def wait_random(max_delay: int = 10) -> float:
     and eventually returns it.
     '''
 
-    n = uniform(0, max_delay)
+    n = uniform(0, float(max_delay))
     await asyncio.sleep(n)
     return n
