@@ -3,10 +3,10 @@
 Simple module for strongly
 typed python
 '''
-from typing import Union, Sequence, Any
+from typing import Any, Sequence
 
 
-def safe_first_element(lst: Sequence[any]) -> Union[Any, None]:
+def safe_first_element(lst: Sequence[Any]) -> None | Any:
     '''
     Function to return the
     first element of a sequence
