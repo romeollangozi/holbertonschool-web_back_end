@@ -1,0 +1,2 @@
+// Script to display all databases
+show dbs;
