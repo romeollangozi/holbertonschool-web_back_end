@@ -4,9 +4,9 @@ Module for retrieving data from mongodb
 '''
 
 
-def update_topics(mongo_collection, name, topics):
+def schools_by_topic(mongo_collection, topic):
     '''
     Function to inset a school document
     '''
 
-    mongo_collection.update_many({"name": name}, {"$set": {"topics": topics}})
+    return mongo_collection.find({"topics": {"$in": [topic]}})
