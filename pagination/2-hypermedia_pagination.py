@@ -48,11 +48,12 @@ class Server:
         '''
         Method to return a http body response
         '''
-
+        '''
         assert isinstance(page, int), "page must be an int"
         assert isinstance(page_size, int), "page_size must be an int"
         assert page > 0, "page number must be greater than 0"
         assert page_size > 0, "page_size must be greater than 0"
+        '''
         data = self.get_page(page, page_size)
         total_pages = math.ceil(len(self.dataset()) / page_size)
         return {
