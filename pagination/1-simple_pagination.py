@@ -34,10 +34,10 @@ class Server:
         Method to return the page and its data
         '''
 
-        assert page > 0, "page number must be greater than 0"
         assert page is int, "page must be an int"
-        assert page_size > 0, "page_size must be greater than 0"
         assert page_size is int, "page_size must be an int"
+        assert page > 0, "page number must be greater than 0"
+        assert page_size > 0, "page_size must be greater than 0"
 
         start, end = index_range(page, page_size)
         return [[data] for data in self.dataset()[start:end]]
