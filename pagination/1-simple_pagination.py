@@ -34,8 +34,8 @@ class Server:
         Method to return the page and its data
         '''
 
-        assert page is int, "page must be an int"
-        assert page_size is int, "page_size must be an int"
+        assert isinstance(page, int), "page must be an int"
+        assert isinstance(page_size, int), "page_size must be an int"
         assert page > 0, "page number must be greater than 0"
         assert page_size > 0, "page_size must be greater than 0"
 
