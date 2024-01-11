@@ -44,7 +44,6 @@ class Server:
         """
 
         indexed_dataset = self.indexed_dataset()
-        print(indexed_dataset[1])
         assert index >= 0 and index < len(indexed_dataset), "out of range"
         assert page_size > 0 and page_size <= len(indexed_dataset),\
             "out of range"
