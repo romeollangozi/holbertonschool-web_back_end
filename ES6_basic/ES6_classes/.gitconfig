@@ -1,5 +1,5 @@
 %main%
-node_modules
+node_modules/
 bable.config.js
 package-lock.json
 package.json
