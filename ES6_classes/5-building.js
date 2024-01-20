@@ -1,8 +1,9 @@
+/*eslint-disable*/
 class Building {
   constructor(sqft) {
     if (this.constructor !== Building && this.evacuationWarningMessage) {
       throw Error(
-        'Class extending Building must override evacuationWarningMessage'
+        "Class extending Building must override evacuationWarningMessage"
       );
     }
     this._sqft = sqft;

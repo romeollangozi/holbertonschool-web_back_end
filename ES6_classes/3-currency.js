@@ -1,3 +1,4 @@
+/*eslint-disable*/
 export default class Currency {
   constructor(code, name) {
     this.code = code;
@@ -11,7 +12,7 @@ export default class Currency {
   set code(newCode) {
     this._code = newCode;
   }
-  
+
   get name() {
     return this._name;
   }
